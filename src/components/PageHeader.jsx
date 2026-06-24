@@ -9,7 +9,7 @@ export default function PageHeader({ eyebrow, title, description, image }) {
         alt=""
         loading="eager"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/45 to-slate-950/30" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-900 via-slate-900/45 to-slate-900/30" />
       <div className="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:px-6 lg:px-8 lg:pb-24">
         <MotionReveal className="max-w-2xl">
           <p className="mb-4 text-sm font-extrabold uppercase tracking-[0.2em] text-red-400">

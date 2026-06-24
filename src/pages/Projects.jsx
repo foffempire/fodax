@@ -7,8 +7,9 @@ import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { projects } from "../data/projects.js";
 import usePageMeta from "../hooks/usePageMeta.js";
+import PageLoader from "../components/PageLoader.jsx";
 
-const filters = ["All", "Residential", "Commercial", "Civil"];
+const filters = ["All", "construction", "installation", "procurement"];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -28,9 +29,9 @@ export default function Projects() {
     <>
       <PageHeader
         eyebrow="Projects"
-        title="A practical portfolio across homes, facilities, and infrastructure."
-        description="Explore sample project types that reflect Fodax's full-service contracting capability and hands-on site delivery."
-        image="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1800&q=80"
+        title="Some of our projects across engineering, procurement and construction."
+        description="Explore some of our executed projects, that reflect Fodax's full-service contracting capability and hands-on site delivery."
+        image="/images/pagetitle/fodax145.webp"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -38,8 +39,8 @@ export default function Projects() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               eyebrow="Portfolio"
-              title="Filter by project category."
-              description="These placeholders make the structure easy to edit when real Fodax project images, locations, and scopes are available."
+              title=""
+              description=""
             />
             <div className="flex flex-wrap gap-3" role="list" aria-label="Project category filters">
               {filters.map((filter) => (
@@ -140,6 +141,7 @@ export default function Projects() {
           </motion.div>
         ) : null}
       </AnimatePresence>
+      <PageLoader />
     </>
   );
 }

@@ -13,6 +13,7 @@ import { projects } from "../data/projects.js";
 import { services } from "../data/services.js";
 import { testimonials } from "../data/testimonials.js";
 import usePageMeta from "../hooks/usePageMeta.js";
+import PageLoader from "../components/PageLoader.jsx";
 
 export default function Home() {
   usePageMeta(
@@ -31,7 +32,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-lg bg-slate-100">
               <img
                 className="aspect-[4/3] h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                src="/images/retail.jpeg"
                 alt=""
                 loading="lazy"
               />
@@ -66,7 +67,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-lg bg-slate-100">
               <img
                 className="aspect-[4/3] h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                src="/images/fodax624.webp"
                 alt=""
                 loading="lazy"
               />
@@ -146,7 +147,7 @@ export default function Home() {
         </div>
       </section> */}
 
-            {/* STATS */}
+      {/* STATS */}
       <section className="bg-slate-950 py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
           {stats.map((stat) => (
@@ -155,6 +156,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PASSION */}
       <section className="bg-slate-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -195,13 +197,15 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* CALL TO ACTION */}
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <MotionReveal>
             <div className="relative isolate overflow-hidden rounded-lg bg-slate-950 px-6 py-14 text-white shadow-strong sm:px-10 lg:px-14">
               <img
                 className="absolute inset-0 -z-20 h-full w-full object-cover opacity-25"
-                src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?auto=format&fit=crop&w=1400&q=80"
+                src="/images/pagetitle/fodax001.jpg"
                 alt=""
                 loading="lazy"
               />
@@ -225,6 +229,7 @@ export default function Home() {
           </MotionReveal>
         </div>
       </section>
+      <PageLoader />
     </>
   );
 }

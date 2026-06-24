@@ -27,7 +27,7 @@ export const heroSlides = [
     description:
       "Our range of engineering and construction services is as broad as the myriad of projects we have completed worldwide. With excellent equipment, knowledgeable oversight and the right people, we have an understanding of what it takes to a complete a great job, on time.",
     image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=80",
+      "/images/hero/construction.webp",
     alt: "",
   },
   {
@@ -36,7 +36,7 @@ export const heroSlides = [
     description:
       "We make steady investment in increasing the spread and number of our retail outlet for our customers to have easy access to petroleum products",
     image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80",
+      "/images/hero/retail.webp",
     alt: "",
   },
   {
@@ -45,7 +45,7 @@ export const heroSlides = [
     description:
       "Our supply and distribution operations cover a diverse range of petroleum products including Premium Motor Spirit (PMS), Automotive Gas Oil (AGO), Dual Purpose Kerosene (DPK) and Liquefied Petroleum Gas (LPG)",
     image:
-      "https://images.unsplash.com/photo-1581093458791-9d09b55a1a7c?auto=format&fit=crop&w=1800&q=80",
+      "/images/hero/distribution.webp",
     alt: "",
   },
   {
@@ -54,7 +54,7 @@ export const heroSlides = [
     description:
       "Fodax Nig Limited provides a full complement of engineering services to assist customers with their project needs including mechanical engineering, civil engineering, electrical engineering instrumentation, corrosion protection engineering, etc",
     image:
-      "https://images.unsplash.com/photo-1581093458791-9d09b55a1a7c?auto=format&fit=crop&w=1800&q=80",
+      "/images/hero/consult.webp",
     alt: "",
   },
 ];

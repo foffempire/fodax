@@ -1,6 +1,7 @@
 import Button from "../components/Button.jsx";
 import MotionReveal from "../components/MotionReveal.jsx";
 import PageHeader from "../components/PageHeader.jsx";
+import PageLoader from "../components/PageLoader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import ServiceCard from "../components/ServiceCard.jsx";
 import { moreServices, processSteps, services } from "../data/services.js";
@@ -18,7 +19,7 @@ export default function Services() {
         eyebrow="Services"
         title="Engineering, Procurement and Construction"
         description="Fodax provides the project coordination, site supervision, procurement planning, and workmanship needed to deliver complete projects across Nigeria."
-        image="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=1800&q=80"
+        image="/images/pagetitle/fodax402.webp"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -27,7 +28,7 @@ export default function Services() {
             align="center"
             eyebrow="What We Do"
             title="One contractor. Many project types. Complete delivery focus."
-            description="Choose Fodax when your project needs joined-up construction management across structure, services, finishing, and external works."
+            description=""
           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service, index) => (
@@ -37,26 +38,29 @@ export default function Services() {
         </div>
       </section>
 
+      {/* MORE SERVICES */}
       <section className="bg-white py-16">
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <SectionHeading
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
             align="center"
             eyebrow="More of What We Do"
             title="Fodax brings expertise accross multiple areas in the oil and gas sector."
             description=""
           />
-                <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                  {moreServices.map((item) => (
-                    <MotionReveal key={item}>
-                      <div className="rounded-lg border border-slate-200 bg-slate-50 px-5 py-6 text-center">
-                        <p className="font-heading font-bold text-slate-950">{item}</p>
-                      </div>
-                    </MotionReveal>
-                  ))}
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {moreServices.map((item) => (
+              <MotionReveal key={item}>
+                <div className="rounded-lg border border-slate-200 bg-slate-50 px-5 py-6 text-center">
+                  <p className="font-heading font-bold text-slate-950">{item}</p>
                 </div>
-              </div>
-            </section>
+              </MotionReveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
+
+      {/* FLOW */}
       <section className="bg-slate-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -79,6 +83,7 @@ export default function Services() {
         </div>
       </section>
 
+      {/* CALL TO ACTION */}
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <MotionReveal>
@@ -98,6 +103,7 @@ export default function Services() {
           </MotionReveal>
         </div>
       </section>
+      <PageLoader />
     </>
   );
 }

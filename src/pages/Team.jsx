@@ -6,6 +6,7 @@ import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { certifications, differentiators, leaders, values } from "../data/company.js";
 import usePageMeta from "../hooks/usePageMeta.js";
+import PageLoader from "../components/PageLoader.jsx";
 
 export default function Team() {
   usePageMeta(
@@ -19,7 +20,7 @@ export default function Team() {
         eyebrow="Our Team"
         title="Our Team, Our Strength"
         description="Competence, hardworking, expertise."
-        image="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80"
+        image="/images/pagetitle/fodax708.webp"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -27,7 +28,7 @@ export default function Team() {
           <MotionReveal className="order-1 lg:order-none">
             <img
               className="w-full rounded-lg object-cover shadow-strong"
-              src="/images/team.jpg"
+              src="/images/team/team.jpg"
               alt=""
               loading="lazy"
             />
@@ -56,7 +57,7 @@ export default function Team() {
           <MotionReveal>
             <img
               className="w-full rounded-lg object-cover shadow-strong"
-              src="/images/biu.jpg"
+              src="/images/team/biu.jpg"
               alt="Project managers reviewing drawings and construction plans"
               loading="lazy"
             />
@@ -106,7 +107,7 @@ export default function Team() {
           <MotionReveal className="order-1 lg:order-none">
             <img
               className="w-full rounded-lg object-cover shadow-strong"
-              src="/images/neye.jpg"
+              src="/images/team/neye.jpg"
               alt=""
               loading="lazy"
             />
@@ -120,7 +121,7 @@ export default function Team() {
           <MotionReveal>
             <img
               className="w-full rounded-lg object-cover shadow-strong"
-              src="/images/didi.jpeg"
+              src="/images/team/didi.jpeg"
               alt=""
               loading="lazy"
             />
@@ -142,7 +143,7 @@ export default function Team() {
           </div>
         </div>
       </section>
-
+<PageLoader />
     </>
   );
 }

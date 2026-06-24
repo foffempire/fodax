@@ -28,7 +28,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative isolate h-[95vh] overflow-hidden bg-slate-950 pt-24 text-white">
+    <section className="relative isolate h-[85vh] lg:h-screen overflow-hidden bg-slate-950 pt-24 text-white">
       <AnimatePresence mode="wait">
         <motion.img
           key={activeSlide.image}
@@ -41,9 +41,9 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         />
       </AnimatePresence>
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/88 to-slate-950/30" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-900/70 via-slate-900/30 to-slate-900/20" />
 
-      <div className="mx-auto flex min-h-[calc(92vh-6rem)] max-w-7xl items-center px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-[calc(92vh-6rem)] max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSlide.title}
@@ -59,7 +59,7 @@ export default function Hero() {
             <h1 className="font-heading text-3xl font-extrabold leading-[1.05] sm:text-4xl lg:text-4xl">
               {activeSlide.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
+            <p className="mt-6 max-w-2xl md:text-lg leading-6 md:leading-8 text-white/78 sm:text-xl">
               {activeSlide.description}
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -85,9 +85,8 @@ export default function Hero() {
         <div className="flex items-center gap-2" aria-label="Hero slide controls">
           {heroSlides.map((slide, index) => (
             <button
-              className={`h-2.5 rounded-full transition ${
-                activeIndex === index ? "w-9 bg-red-500" : "w-2.5 bg-white/55 hover:bg-white"
-              }`}
+              className={`h-2.5 rounded-full transition ${activeIndex === index ? "w-9 bg-red-500" : "w-2.5 bg-white/55 hover:bg-white"
+                }`}
               type="button"
               onClick={() => setActiveIndex(index)}
               aria-label={`Show slide ${index + 1}: ${slide.eyebrow}`}

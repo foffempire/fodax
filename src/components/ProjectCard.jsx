@@ -14,7 +14,7 @@ export default function ProjectCard({ project, onSelect, delay = 0 }) {
           <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
             <img
               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-              src={project.image}
+              src={project.image[0]}
               alt={`${project.title} project in ${project.location}`}
               loading="lazy"
             />
@@ -28,7 +28,7 @@ export default function ProjectCard({ project, onSelect, delay = 0 }) {
               <MapPin className="h-4 w-4 text-red-600" aria-hidden="true" />
               {project.location}
             </p>
-            <p className="mt-4 leading-7 text-slate-600">{project.description}</p>
+            {/* <p className="mt-4 leading-7 text-slate-600">{project.description}</p> */}
           </div>
         </button>
       </article>

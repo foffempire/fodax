@@ -27,6 +27,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setOpen(false);
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   return (

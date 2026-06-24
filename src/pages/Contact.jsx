@@ -5,6 +5,7 @@ import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { company } from "../data/company.js";
 import usePageMeta from "../hooks/usePageMeta.js";
+import PageLoader from "../components/PageLoader.jsx";
 
 const contactItems = [
   { label: "Address", value: company.address, icon: MapPin },
@@ -25,7 +26,7 @@ export default function Contact() {
         eyebrow="Contact"
         title="Tell us what you want to build."
         description="Share your project location, scope, budget range, and expected timeline. Fodax will help you take the next step with clarity."
-        image="https://images.unsplash.com/photo-1581091870622-1e7e4d665f18?auto=format&fit=crop&w=1800&q=80"
+        image="/images/pagetitle/fodax303.webp"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -106,6 +107,7 @@ export default function Contact() {
           </MotionReveal>
         </div>
       </section>
+      <PageLoader />
     </>
   );
 }

@@ -6,6 +6,7 @@ import PageHeader from "../components/PageHeader.jsx";
 import SectionHeading from "../components/SectionHeading.jsx";
 import { certifications, differentiators, leaders, values } from "../data/company.js";
 import usePageMeta from "../hooks/usePageMeta.js";
+import PageLoader from "../components/PageLoader.jsx";
 
 export default function About() {
   usePageMeta(
@@ -19,7 +20,7 @@ export default function About() {
         eyebrow="About Fodax"
         title="Your construction partner built for strength, precision, and trust."
         description="FODAX Nig Limited is a 100% indigenous private company. The company is proudly Nigerian and is motivated by its intention to provide high quality, safe and excellent service."
-        image="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80"
+        image="/images/pagetitle/fodax466.webp"
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -79,7 +80,7 @@ export default function About() {
           <MotionReveal>
             <img
               className="aspect-[5/4] w-full rounded-lg object-cover shadow-strong"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+              src="/images/meeting.jpg"
               alt="Project managers reviewing drawings and construction plans"
               loading="lazy"
             />
@@ -103,7 +104,7 @@ export default function About() {
       </section>
 
 
-
+              {/* SAFETY */}
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
           <div className="order-2 lg:order-none">
@@ -116,7 +117,7 @@ export default function About() {
           <MotionReveal className="order-1 lg:order-none">
             <img
               className="aspect-[5/4] w-full rounded-lg object-cover shadow-strong"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+              src="/images/fodax249.webp"
               alt="Project managers reviewing drawings and construction plans"
               loading="lazy"
             />
@@ -161,7 +162,7 @@ export default function About() {
           <MotionReveal>
             <img
               className="aspect-[5/4] w-full rounded-lg object-cover shadow-strong"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+              src="/images/fodax439.webp"
               alt="Project managers reviewing drawings and construction plans"
               loading="lazy"
             />
@@ -189,7 +190,7 @@ export default function About() {
           </div>
         </div>
       </section>
-
+      <PageLoader />
     </>
   );
 }
