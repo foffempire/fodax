@@ -8,14 +8,13 @@ import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import Services from "./pages/Services.jsx";
 import Team from "./pages/Team.jsx";
-import PageLoader from "./components/PageLoader.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white font-body text-slate-700 antialiased">
       <ScrollToTop />
       <Navbar />
-      <PageLoader />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,6 +23,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFoundPage /> } />
         </Routes>
       </main>
       <Footer />
