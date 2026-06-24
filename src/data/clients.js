@@ -1,14 +1,15 @@
 export const clients = [
+  "/images/clients/nnpc.jpeg",
+  "/images/clients/shell.jpg",
+  "/images/clients/renaissance.png",
+  "/images/clients/maton.png",
+  "/images/clients/enixco.jpg",
   "/images/clients/a-and-m-fuel.png",
   "/images/clients/Belbop.png",
   "/images/clients/conoil.jpeg",
-  "/images/clients/enixco.jpg",
   "/images/clients/first-fortune.jpg",
-  "/images/clients/maton.png",
   "/images/clients/nd-western.jpeg",
   "/images/clients/sharon.jpg",
-  "/images/clients/nnpc.jpeg",
-  "/images/clients/shell.jpg",
 ];
 
 

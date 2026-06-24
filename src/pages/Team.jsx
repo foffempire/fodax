@@ -70,7 +70,7 @@ export default function Team() {
             />
             <MotionReveal className="mt-8 grid gap-4">
               <p>
-               Raphael is a passionate Engineer with extensive experience in the Oil and Gas sector. He is a Materials & Metallurgical Engineering graduate of the prestigious Federal University of Technology Owerri, Imo State. He holds a Master of Science (M.Sc.) degree in Engineering Management from the University of Benin, Edo State and has a Doctorate degree in Industrial Engineering from  university of Benin. He is a member of the Institute of Safety Professionals of Nigeria (ISPON), a fellow of Nigerian Society of Engineers (NSE), a registered Engineer of the Council for the Regulation of Engineering in Nigeria (COREN) and an alumnus of Harvard Business School. 
+                Raphael is a passionate Engineer with extensive experience in the Oil and Gas sector. He is a Materials & Metallurgical Engineering graduate of the prestigious Federal University of Technology Owerri, Imo State. He holds a Master of Science (M.Sc.) degree in Engineering Management from the University of Benin, Edo State and has a Doctorate degree in Industrial Engineering from  university of Benin. He is a member of the Institute of Safety Professionals of Nigeria (ISPON), a fellow of Nigerian Society of Engineers (NSE), a registered Engineer of the Council for the Regulation of Engineering in Nigeria (COREN) and an alumnus of Harvard Business School.
               </p>
               <p>
                 Dr. Raphael was admitted as a Doctoral fellow of the Chattered Institute of Logistics and Supply Chain Management, and a certified member of the American Society of Mechanical Engineers (ASME). He is a professional Scum Master, a certified Project Management Professional (PMP), a member of Project Management Institute (PMI) and a member of the Society of Petroleum Engineers (SPE).
@@ -83,8 +83,8 @@ export default function Team() {
         </div>
       </section>
 
-
-      <section className="bg-white py-20 sm:py-24">
+      {/* NEYE */}
+      {/* <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
           <div className="order-2 lg:order-none">
             <SectionHeading
@@ -92,7 +92,7 @@ export default function Team() {
               title="Neye Davies"
               description=""
             />
-            <MotionReveal className="mt-8 grid gap-4"> 
+            <MotionReveal className="mt-8 grid gap-4">
               <p>
                 A graduate of Business Administration and Management and with almost 7 years of expertise in business development, supply and distribution, haulage logistics, and petroleum depot operations, Davies has earned his accolades in the business and petroleum industry
               </p>
@@ -113,10 +113,10 @@ export default function Team() {
             />
           </MotionReveal>
         </div>
-      </section>
+      </section> */}
 
-
-      <section className="bg-slate-50 py-20 sm:py-24">
+      {/* DIDI */}
+      {/* <section className="bg-slate-50 py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
           <MotionReveal>
             <img
@@ -132,7 +132,7 @@ export default function Team() {
               title="Tiemo Prisca Didimien"
               description=""
             />
-            <MotionReveal className="mt-8 grid gap-4"> 
+            <MotionReveal className="mt-8 grid gap-4">
               <p>
                 Prisca is a second-class upper Division Honors graduate of Niger Delta University. She has years of experience that covers Auditing and financial Accounting. She is also a student member of The Institute of Chartered Accountants of Nigeria (ICAN).
               </p>
@@ -142,8 +142,10 @@ export default function Team() {
             </MotionReveal>
           </div>
         </div>
-      </section>
-<PageLoader />
+      </section> */}
+
+
+      <PageLoader />
     </>
   );
 }
